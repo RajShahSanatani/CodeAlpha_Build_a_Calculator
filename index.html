@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj's Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <h2 class="author-name">Calculator by Raj</h2>
+    <div class="history" id="history"></div>
+    <input type="text" id="display" readonly />
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()">⌫</button>
+      <button onclick="append('/')">&divide;</button>
+      <button onclick="append('*')">&times;</button>
+
+      <button onclick="append('7')" data-key="7">7</button>
+      <button onclick="append('8')" data-key="8">8</button>
+      <button onclick="append('9')" data-key="9">9</button>
+      <button onclick="append('-')">&minus;</button>
+
+      <button onclick="append('4')" data-key="4">4</button>
+      <button onclick="append('5')" data-key="5">5</button>
+      <button onclick="append('6')" data-key="6">6</button>
+      <button onclick="append('+')">+</button>
+
+      <button onclick="append('1')" data-key="1">1</button>
+      <button onclick="append('2')" data-key="2">2</button>
+      <button onclick="append('3')" data-key="3">3</button>
+      <button onclick="calculate()" class="equal">=</button>
+
+      <button onclick="append('0')" class="zero" data-key="0">0</button>
+      <button onclick="append('.')" data-key=".">.</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
